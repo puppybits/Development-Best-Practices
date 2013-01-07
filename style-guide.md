@@ -201,7 +201,11 @@ A short list of highlights from Apple's guidelines:
  * `extern` and `const` should be favored over `#define`
  
     ``` objc
-    extern const NSString *RGAImageDidChangeNotification = @"RGAImageDidChangeNotification";  //Right
+    //.h
+    extern const NSString *RGAImageDidChangeNotification;
+    //.m
+    const NSString *RGAImageDidChangeNotification = @"RGAImageDidChangeNotification";         //Right
+    
     #define RGAImageDidChangeNotification @"RGAImageDidChangeNotification";                   //Wrong
     ```
 
