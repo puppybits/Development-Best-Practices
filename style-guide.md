@@ -33,11 +33,7 @@ A short list of highlights from Apple's guidelines:
     //[Name of associated class] + [Did | Will] + [UniquePartOfName] + Notification
     extern NSString *NSApplicationDidBecomeActiveNotification;
     ```
-  * Private ivars should contain your namespaces-prefix followed by the underscore
-  
-    ```objc
-    @sythesize myProperty=RGA_myProperty;
-    ```
+  * Private ivars should be prefixed with the underscore
   * Prefer defining categories inline in the header file instead of separate .h/.m file (external categories tend to get lost in the code base).
 
 ## Best Practices
@@ -155,7 +151,7 @@ A short list of highlights from Apple's guidelines:
 ## Literals
 
  * Always use object literals. (`@String`, `@1`, `@[@1,@2,@3]`,`@{key:@value}`)
- * Never use subscripting! (`myArray[0]`)
+ * Prefer regular method calls over subscripting. (subscripting is harder to support on older iOS version and can lead to multiple subscript calls inside of data typing and error checking hierarchies).
  * Unless being used as a parameter, the contents of array and dictionary literals should be on new lines.
  * Dictionary literals should have no space between the key and the colon, and a single space between colon and value.  
   
