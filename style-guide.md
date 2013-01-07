@@ -151,7 +151,7 @@ A short list of highlights from Apple's guidelines:
 ## Literals
 
  * Always use object literals. (`@String`, `@1`, `@[@1,@2,@3]`,`@{key:@value}`)
- * Prefer regular method calls over subscripting. (subscripting is harder to support on older iOS version and can lead to multiple subscript calls inside of data typing and error checking hierarchies).
+ * Avoid multiple subscripting calls in the same line.
  * Unless being used as a parameter, the contents of array and dictionary literals should be on new lines.
  * Dictionary literals should have no space between the key and the colon, and a single space between colon and value.  
   
