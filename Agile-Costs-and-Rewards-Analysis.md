@@ -87,6 +87,9 @@ Tech Leads would also in a master scrum to help level-set between teams.
 ---
 
 ### TDD (Test-Driven Development) & Unit Testing
+
+---
+
 TDD was prompted but not rigorously enforced. What was enforced was that Code Completion(CC) was at 98% for the server-side page creation where back-end services would be joined with HTML/JS/CSS. Because of this insanely high metric, unit tests were required for every possible pass through the code. Unit tests were part of the build process and required to be fully isolated. Every object used in code required a mock. The mocks are injected in the setup for the test and completely makes your test separated from the rest of the code. Stubbed data needed to be created for every variant of the data that could be returned.
 
 Controllers and models lend themselves much better to fully isolated unit testing than view code. It's almost best to forget about unit testing view code and instead lean on functional testing for views.
@@ -111,6 +114,7 @@ Controllers and models lend themselves much better to fully isolated unit testin
 ### Living Style Guide
 
 ---
+
 After a task has all of it's dependancies completed and approved by the team, coding starts. This is front-end development, so the result of everything is that a user can do something (something that QA/automation can test). First was building a component that the site would use. Every component would be first built in the Style Guide. 
 
 The Style Guide is and interactive, internal website. There rare a couple main sections to the Style Guide: components, page layout (some type of grid system), application controllers. Each component would have a static image from visual with all of it's defined functionality and possible visual states. It also has an interactive one that they developer would build and code and notes to leverage this component in the future.
@@ -126,7 +130,8 @@ The Style Guide is and interactive, internal website. There rare a couple main s
 * it gave QA, creative, developers and business-owners a place to discuss low-level functionality on a similar platform. 
 * Quicker ramp up time and more diversification about which developer to tackle task in a new part of code.
 * Overall the Style Guide was a massive win project wide.
-* I would have liked to see it leveraged more and includes more to set a base-line and talk about functionality with creative/ux
+* * I would have liked to see it leveraged more and includes more to set a base-line and talk about functionality with creative/ux
+
 ---
 
 ### Page Implementation
@@ -146,6 +151,9 @@ The page creation back-end would retrieve data from the stubbed services. Pull i
 ---
 
 ### BDD - Functional Testing
+
+---
+
 After the task is complete and if there is integration into a page, then QA would have previously written acceptance tests to be complete. 
 Developer would write functional behavior tests. The pass/fail of the acceptance test was added into CI which would fail if the test failed. 
 
@@ -164,6 +172,9 @@ Developer would write functional behavior tests. The pass/fail of the acceptance
 ---
 
 ### Code Acceptance (Code Reviews, Merging to Master)
+
+---
+
 After a task was completed by the developer they would make sure  all they had created the unit and behavior functional testing. Running the build script would validate code completion and run through the functional testing only for the affected session. This was for performance reasons since behavior tests should be isolated and each test would restart close and reopen the browser it could get tedious. Once a passing grade was received the developer would open a code review.
 
 The code review would need to be linked to the documentation of the back-end services, visual/UX and anything else pertinent. The code would need to be accepted by 1 official code reviewer (approved by the architect) and 2 nonofficial code reviewers. Official code reviewers frequently had the architect review their code as well.
@@ -191,6 +202,8 @@ If the code was reject, it would be refactored according to notes in the code re
 
 ### Testing and Acceptance Cycle
 
+---
+
 QA creates gherkin-style acceptance testing that is agreed upon with development prior to accepting a task into the sprint. Acceptance criteria is defined prior to a task being accepted in a sprint. 
 
 Generally QA starts a sprint by creating acceptance criteria for the upcoming sprint. At the end of the sprint developer are freed up to review acceptance criteria and either accept or work with the QA to agree on modifications to the tests. 
@@ -200,9 +213,11 @@ The second week of the sprint QA is switching focus more to manual testing and r
 #### Benefits 
 * having acceptance criteria prior to task acceptance allows for a deeper understanding and exposes more details for the developer to make a better assessment that all dependencies have been completed. 
 * acceptance tests also spend the work on the QA more evenly when it tends to cluster into a mad dash and frequent overtime at the end of a sprint. 
+
 #### Challenges
 * regressions are a little for sparse while QA is focusing time on creating the acceptance. 
 * lots of time is spent writing automated testing a d there is not a counter-factual to judge their worth or what is a comparable level of automation. 
+
 #### Happy side-effects
 * QA has a much deeper understanding of what they are testing, what should and shouldn’t be automated and have a better working communication with development. 
 
@@ -241,6 +256,9 @@ The second week of the sprint QA is switching focus more to manual testing and r
 ---
 
 ### Continual Tracked Improvement
+
+---
+
 Retrospectives are a key part of agile that should NEVER be left out. A key part of Agile is continuos improvement. Retrospectives are the only point where the team has an formalized open forum to bring up grievances and breaks in the process.
 
 Our retrospectives started by having one developer say one thing that was good and everything bad that came up during the sprint. It would go around the room until all developers had a chance to bring up any issues. It worked best when developers would track issues during the sprint and be able to shotgun through their list in the meeting. Then there would be another pass around for developer to +1 on any task that was a big issue on the sprint. 
@@ -254,7 +272,6 @@ Retrospectives were tracked and shared across teams. They would also receive a b
 * Continuos self-analysis by everyone.
 * Constant incremental improvement on the process. Re-weighting the costs of some process with the rewards.
 
-
 #### Challenges
 * There are many ways to do retrospectives. Going through different techniques and analyzing the strengths and weaknesses of the techniques will create better triaging of the issues.
 * Having a well-trained leader for the retrospective is important in getting the most of out it.
@@ -266,6 +283,9 @@ Retrospectives were tracked and shared across teams. They would also receive a b
 ---
 
 ### Story Lifecycle
+
+---
+
 Stories typically because with the business owner having a problem that needs a solution in the project. Generally it is UX related and goes to the creative team to address. Creative works through the problem and solution with open communication between developers. They will be working on stories anywhere from 1 to 5 sprints ahead of development. 
 Once creative has a solution the visuals are approved by the business owner. The 
 
@@ -276,6 +296,8 @@ Once creative has a solution the visuals are approved by the business owner. The
 ---
 
 # Sample of a good sprint encapsulation 
+
+---
 
 * All testing for the tasks in the sprint must be completed in the sprint.
 * There must be something useable by the end-user as a result of the sprint.
