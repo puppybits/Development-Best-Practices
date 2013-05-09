@@ -295,6 +295,17 @@ Once creative has a solution the visuals are approved by the business owner. The
 
 ---
 
+### Building Out, Not Up (GIT)
+
+A lot of development pratices are still buliding one task at a time and stacking that work on top of the next. This builds bigger and bigger structures that are all relaiant on the complete stack in order to function. So many teams are in the mind-set of SVN and Perforce. Buliding in stacks. Working on Git allows for a 
+
+
+#### Benefits
+#### Challenges
+#### Happy side-effects
+
+---
+
 # Sample of a good sprint encapsulation 
 
 ---
