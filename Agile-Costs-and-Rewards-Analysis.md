@@ -1,20 +1,78 @@
-# Agile: A formalized process to constantly improve and innovate, deliver constancy and build a stronger team that builds better products.
+# Agile: A formalized process to simultaneously provide product innovation, produce constant results and methodically improve the processes and team members.
 
-* if each sprint isn't getting better then you're doing something wrong.
+###### * if each sprint isn't getting better then you're doing something wrong.
 ---
 
 ### My background
-This comes from my personal experience on some very good and very poor implementations of Agile. The cost (developer time) associated in order to get the rewards (stable, useable product) in using a process. Most of the process implementation are from a single project I worked on and how processes lead to an amazingly plyable, useful and stable product. The recommendations come from my experience with balancing the cost/rewards when building new innovated projects.
+This comes from my personal experience with Agile. I've been on long-term projects with great implementations of Agile and smaller short-term projects with huge problems while on Agile. There are costs (developer time) associated in order to get the rewards (stable, useful product) in using each part of Agile. The majority of my great Agile experiences come from a single project I worked on and how processes lead to an amazingly plyable, stable and increasingly useful product. The recommendations come from my experience with balancing the cost and rewards of Agile to create new innovative products.
+
+To me, Agile has become fundamental and revolutionary in what it offers in discovering truths and creating virtuous cycles of improvement. The gold standard of processes has always been the Scientific Method. It progressively teaches us what is "truth" and what is false by continuing through it's processes. But there is one fatal flaw: it requires a control group. A control group means that you have one group that is 100% isolated and a second group that just has the 1 fact changed. In practice control groups are very costly, can be misleading and a lot of the times impossible to have. Agile's twist on this is to create a single group that discovers tiny deficiencies, spends a small amount of time to create a solution and objectively evaluates the implementation of the solution. It's not an end-all-be-all, its instilling constant evolution of ideas into a reality that gets closer to solving problem.
+
+Agile is a huge bundle of processes, all with varying costs and rewards. The goal of this is to _dictate_ where to start even in the most fundamentally basic project with no money and resources. This is should be general enough to apply to anyone creating products not just software development. Next I'll go into a basic recommended structure for small teams of handful of developers to start with. I care more about creating a structure where the key items naturally bubble up to be improved upon and that focuses on building a stronger team that can build better products. Lastly I'll do an introspection on each of the core processes in Agile software development, what are the costs need to get to each reward level and what unexpected side-effects I saw coming out of it. Take note that these are a result of the entire processes implemented working in tandem. Do not expect to do one thing and have the exact same result. It's merely a goal post for when you are evaluating your own implementation to see if you're getting what you want out of each process.
 
 ---
 
-# Key Learnings
+# Guard rails for starting Agile
+
+---
+
+## Are you Agile or not?
+
+---
+
+The first thing is to understand is what is the purpose of Agile. __Agile is a formalized process to simultaneously provide product innovation, produce constant results and methodically improve the processes and team members.__
+
+There are 3 tenants in this definition.If all these 3 are not addressed then your project is not being setup to self-correct, feed good ideas and come out with a product that is useful to the end user. It doesn't mean you can't end up with a useful product but it's not Agile and you have room for improvement.
+
+1. __Innovation:__ Innovation is not magic; it's making small pieces of functionality that can be used, evaluated and refined by the end-user. The main agile process that instills this is the __product review__. When a sprint is completed there is something that has value to the end-user. The work can be evaluated, refined and thrown away (if needed) to progressively build a product that is adapting to the needs of the end-user. The product owner then is responsible to re-prioritize the tasks to work on the next most important items.
+
+2. __Constancy:__ In order to be constant there are 2 parts that needs addressing.  First there must be a proper planning process. The product owner has prioritized the tasks with basic documentation for each task. The process used to refine and explicitly detail each task is critical. A centralized tracking tool must be in place in which the documentation of tasks are continually refined. These __living documents__ allow for asynchronous work to be done in parallel and leverage of the team member that need to know, while also allowing people to jump in and out of refining the documentation. Once the documentation has been refined to the point that there is no ambiguity and no dependencies that would stop the task from being built properly, it can be a candidate for a coming sprint.  The second part of instilling constancy is by having a consistent formalized process to re-evaluate the planning and execution processes. If team members are over or under utilized or tasks are not being completed something is broken and needs to get realigned. __Retrospectives__ at the end of the sprint are the main driver to enable the team to self-evaluate and collectively triage deficiencies. Only the most critical problems need to have actions taken to improve. The actions taken must tracked in order to evaluated the cost and effectiveness of the proposed solution. 
+
+3. __Methodic Improvements:__  Trackable analysis of how effective or ineffective the processes are and how the team is performing is imparitive. __Key Performance Indicators__ need to be defined, tracked and visible to the product owner, generally in the product review process. This keeps the project and the team honest by having measurements to show improvements or slippage. The __Service Level Agreement__ of KPI should be continually evaluated and reevaluated in order to weight trade-off between the cost to implement/maintain something and the rewards it is delivering. It is hard to create metrics. They can become misleading if they aren't constantly improved. But without measurements there can be no subjective analysis of progress and decline.
+
+Here's a few bullet points to help self-analyze if you're on the right track:
+
+* Don't use email! Use a centralize tracking system and allows be building living documentation. 
+* Have short iterations. 
+* The team should have a time to be introspective about what was just build and how it was built. 
+* The team needs to cognitively triaging only the most important issues. (This is not a discussion, it requires a structure to allow this to come out naturally)
+* Assign owners to action items and track changes. 
+* Set expected reward levels and cost with implementing each Agile practice. 
+* Continually evaluate processes' costs and rewards. 
+
+#### Benefits
+* Building the product is a constant process by creating the most important and useful items, judging their usefulness and re-prioritizing the next items to build. This forces you to build a product that is increasingly most useful to the end-user.
+* Gage speed and quality of the output.
+* Constant analysis and small effort with completing a task allows for quick changes in direction and reaffirms good decisions sooner.
+
+#### Challenges
+* Triaging is extremely difficult. 
+* Staying honest and impartial about the progress, deficits and especially declines are hard to gage and take actions to correct.
+* Discovering which process are interconnected. How they are structured and connected can either be mutually beneficial or be a waste of time and money. For instance, setting metics with the product owner keeps the team honest about it's progress but if there is no process for continually re-evaluating SLAs and KPIs it can quickly get into a pattern where having to meet an SLA that has been set too high requires a lot of time but without enough rewards coming out of it. Unit Testing can also have downside if there's no metrics to judge the proper amount and focus of unit tests.
+* By saying you're "doing Agile" but the process is setup for failure just gives everyone a bad connotation in doing it again.
+
+#### Happy side-effects
+* Teams members build each other up by formally sharing knowledge and motivate other team members into the doing things better. This builds a better team that can in turn build better projects.
+* The low cost of building something lets you throw out the bad much quicker and more constantly.
+* Creating metrics and sharing metrics really do keep you honest and less bias to better self-evaluate. 
+
+---
+
+## The Default Agile
+
+---
+
+TODO: Structure sprints, focus on live documentation for planning, retrospectives with consequences, what/how to start unit testing, how to structure the product review and the most low cost, high reward metrics to start with.
+
+---
+
+## Key Learnings from Agile
 
 ---
 
 * The building process is about building out, not up. You should be able to have features & services that can be leveraged, refactored or swapped out without breaking the entire project.
 * Tech Lead role: 
-  * base level-set on the development skill set
+	* the base level of development skills needed for the project
 	* must be coding at least 40% of the time
 	* can be, but doesn't need to be, the architect 
 	* generally tech leads spend too much time leading and not enough time coding and building up the team
@@ -36,15 +94,35 @@ This comes from my personal experience on some very good and very poor implement
 * QA needs to understand and test both isolation of work and integration or work.
 * everybody codes, everybody is a tech lead, everybody has input in the design/UX/services process
 * Using retrospectives to subconsciously have the team filter up the main issues and constantly improve the process where it's most needed. 
-* The end of sprint product demos are the key to innovation. Analyze what was done, if it should be changed/improved, reset course if necessary (by queuing up tasks for a future sprint), bring all the teams together to review the product's usefulness and 
+* The end of sprint product demos are the key to innovation. Analyze what was done. If it should be changed/improved, reset course if necessary (by queuing up tasks for a future sprint). Bring all the teams together to review the product's usefulness and how to improve.
 
 ---
 
-# Planning Process
+## Time for self-reflection: Are you doing Agile right? 
 
 ---
 
-## Pre-Planning
+* Do your good developers and testers leave on time between 90 and 95% of the time?
+* Are you becoming more constant with completing the task agreed upon at the beginning of the sprint?
+* Do you have some free time to work on improving the process?
+* Are you triaging properly? When you spend time changing something on process does it make developers, testers, creative, business owners and end users happier?
+* Do you have anything metric'ed and tracked across sprints? (If you're not then give an SLA to the business owner that gets a bullet point in the product demo)
+* Is there enough pain when someone fails to follow and improve the process? If you have a bad coder it should be harder for him to get it bad code accepted in the sprint and simpler for him to do the code right. If they have to stay late to re-write bad code in order to make it into the sprint they will learn how to do it right so they can work less.
+* When good things happen are they self-promoting to create more good things? 
+* How can you show you're improving something unless it's tracked or documented?
+* Are you living in isolated email accounts or collectively building better documentation to decide what/how to work?
+
+---
+
+# Piece by Piece Analysis of Agile
+
+---
+
+## Planning Process
+
+---
+
+### Pre-Planning
 
 Ad-hoc developers reviewing task documentation from creative, back-end service methods, data model and stubs and QA acceptance criteria. This is a continual process during the sprint. Until a  developer on the team signs off on all the requirements the task can not be included in the sprint.
 
@@ -58,7 +136,7 @@ Ad-hoc developers reviewing task documentation from creative, back-end service m
 
 ---
 
-## Planning Meeting
+### Planning Meeting
 
 Tech Leads gather definitions of tasks for upcoming sprint. Only 100% locked down tasks accepted.  QA works 1 sprint ahead to write Gherkin-style acceptance tests. Design is 1 to 2 sprints ahead to create visuals and filter UX business requirements. Back-end services is 1 sprint ahead with an agreed upon service data stubbed out. Tech Lead stays in sync with QA, Creative and other Tech Leads/Project Architect.
 
@@ -88,8 +166,6 @@ Tech Leads would also in a master scrum to help level-set between teams.
 
 ### TDD (Test-Driven Development) & Unit Testing
 
----
-
 TDD was prompted but not rigorously enforced. What was enforced was that Code Completion(CC) was at 98% for the server-side page creation where back-end services would be joined with HTML/JS/CSS. Because of this insanely high metric, unit tests were required for every possible pass through the code. Unit tests were part of the build process and required to be fully isolated. Every object used in code required a mock. The mocks are injected in the setup for the test and completely makes your test separated from the rest of the code. Stubbed data needed to be created for every variant of the data that could be returned.
 
 Controllers and models lend themselves much better to fully isolated unit testing than view code. It's almost best to forget about unit testing view code and instead lean on functional testing for views.
@@ -113,8 +189,6 @@ Controllers and models lend themselves much better to fully isolated unit testin
 
 ### Living Style Guide
 
----
-
 After a task has all of it's dependancies completed and approved by the team, coding starts. This is front-end development, so the result of everything is that a user can do something (something that QA/automation can test). First was building a component that the site would use. Every component would be first built in the Style Guide. 
 
 The Style Guide is and interactive, internal website. There rare a couple main sections to the Style Guide: components, page layout (some type of grid system), application controllers. Each component would have a static image from visual with all of it's defined functionality and possible visual states. It also has an interactive one that they developer would build and code and notes to leverage this component in the future.
@@ -136,7 +210,6 @@ The Style Guide is and interactive, internal website. There rare a couple main s
 
 ### Page Implementation
 
----
 
 The page creation back-end would retrieve data from the stubbed services. Pull in any of the components detailed in the Style Guide and any other routing/transformation of data that was needed. Server sessions should be never be used. They add lots of dependancies on the back-end's performance and threading. It also adds states which is kills concurrency and creates a lot of side-effects.
 
@@ -151,8 +224,6 @@ The page creation back-end would retrieve data from the stubbed services. Pull i
 ---
 
 ### BDD - Functional Testing
-
----
 
 After the task is complete and if there is integration into a page, then QA would have previously written acceptance tests to be complete. 
 Developer would write functional behavior tests. The pass/fail of the acceptance test was added into CI which would fail if the test failed. 
@@ -172,8 +243,6 @@ Developer would write functional behavior tests. The pass/fail of the acceptance
 ---
 
 ### Code Acceptance (Code Reviews, Merging to Master)
-
----
 
 After a task was completed by the developer they would make sure  all they had created the unit and behavior functional testing. Running the build script would validate code completion and run through the functional testing only for the affected session. This was for performance reasons since behavior tests should be isolated and each test would restart close and reopen the browser it could get tedious. Once a passing grade was received the developer would open a code review.
 
@@ -201,8 +270,6 @@ If the code was reject, it would be refactored according to notes in the code re
 ---
 
 ### Testing and Acceptance Cycle
-
----
 
 QA creates gherkin-style acceptance testing that is agreed upon with development prior to accepting a task into the sprint. Acceptance criteria is defined prior to a task being accepted in a sprint. 
 
@@ -256,9 +323,7 @@ The second week of the sprint QA is switching focus more to manual testing and r
 ---
 
 ### Continual Tracked Improvement
-
----
-
+ 
 Retrospectives are a key part of agile that should NEVER be left out. A key part of Agile is continuos improvement. Retrospectives are the only point where the team has an formalized open forum to bring up grievances and breaks in the process.
 
 Our retrospectives started by having one developer say one thing that was good and everything bad that came up during the sprint. It would go around the room until all developers had a chance to bring up any issues. It worked best when developers would track issues during the sprint and be able to shotgun through their list in the meeting. Then there would be another pass around for developer to +1 on any task that was a big issue on the sprint. 
@@ -284,8 +349,6 @@ Retrospectives were tracked and shared across teams. They would also receive a b
 
 ### Story Lifecycle
 
----
-
 Stories typically because with the business owner having a problem that needs a solution in the project. Generally it is UX related and goes to the creative team to address. Creative works through the problem and solution with open communication between developers. They will be working on stories anywhere from 1 to 5 sprints ahead of development. 
 Once creative has a solution the visuals are approved by the business owner. The 
 
@@ -304,7 +367,9 @@ A lot of development pratices are still buliding one task at a time and stacking
 #### Challenges
 #### Happy side-effects
 
+
 ---
+
 
 # Sample of a good sprint encapsulation 
 
@@ -316,16 +381,5 @@ A lot of development pratices are still buliding one task at a time and stacking
 
 <table border=0 cellpadding=0 cellspacing=0 width=100% style='border-collapse: collapse;table-layout:fixed;width:100%'> <col width=212 style='mso-width-source:userset;mso-width-alt:9045;width:212pt'> <col width=65 span=10 style='width:65pt'> <tr height=42 style='mso-height-source:userset;height:42.0pt'><td height=42 width=212 style='height:42.0pt;width:212pt'></td><td class=xl65 colspan=3 width=195 style='mso-ignore:colspan;width:195pt'>Sample2 week Sprint cadance</td><td width=65 style='width:65pt'></td><td width=65 style='width:65pt'></td><td width=65 style='width:65pt'></td><td width=65 style='width:65pt'></td><td width=65 style='width:65pt'></td><td width=65 style='width:65pt'></td><td width=65 style='width:65pt'></td> </tr> <tr height=20 style='height:20.0pt'><td height=20 class=xl66 style='height:20.0pt'>Developers</td><td colspan=10 style='mso-ignore:colspan'></td> </tr> <tr height=15 style='height:15.0pt'><td height=15 class=xl67 style='height:15.0pt'>days</td><td class=xl68>1</td><td class=xl68>2</td><td class=xl68>3</td><td class=xl68>4</td><td class=xl68>5</td><td class=xl68>6</td><td class=xl68>7</td><td class=xl68>8</td><td class=xl68>9</td><td class=xl68>10</td> </tr> <tr height=15 style='height:15.0pt'><td height=15 class=xl67 style='height:15.0pt;border-top:none'>reviewingrequirements</td><td class=xl69>50%</td><td class=xl70></td><td class=xl70></td><td class=xl70></td><td class=xl70></td><td class=xl69>10%</td><td class=xl69>20%</td><td class=xl69>30%</td><td class=xl69>10%</td><td class=xl69>30%</td> </tr> <tr height=15 style='height:15.0pt'><td height=15 class=xl67 style='height:15.0pt;border-top:none'>coding</td><td class=xl69>50%</td><td class=xl69>100%</td><td class=xl69>100%</td><td class=xl69>100%</td><td class=xl69>100%</td><td class=xl69>60%</td><td class=xl69></td><td class=xl70></td><td class=xl70></td><td class=xl70></td> </tr> <tr height=15 style='height:15.0pt'><td height=15 class=xl67 style='height:15.0pt;border-top:none'>code hardening(testing/bug fixing)</td><td class=xl70></td><td class=xl69></td><td class=xl69></td><td class=xl69></td><td class=xl69></td><td class=xl69></td><td class=xl69></td><td class=xl69>40%</td><td class=xl69>60%</td><td class=xl69>60%</td> </tr> <tr height=15 style='height:15.0pt'><td height=15 class=xl67 style='height:15.0pt;border-top:none'>code reviews</td><td class=xl70></td><td class=xl70></td><td class=xl70></td><td class=xl70></td><td class=xl70></td><td class=xl69>10%</td><td class=xl69>60%</td><td class=xl69>30%</td><td class=xl69>30%</td><td class=xl70></td> </tr> <tr height=15 style='height:15.0pt'><td height=15 class=xl67 style='height:15.0pt;border-top:none'>behaviortesting</td><td class=xl70></td><td class=xl70></td><td class=xl70></td><td class=xl70></td><td class=xl70></td><td class=xl69>20%</td><td class=xl69>20%</td><td class=xl70></td><td class=xl70></td><td class=xl70></td> </tr> <tr height=15 style='height:15.0pt'><td height=15 class=xl67 style='height:15.0pt;border-top:none'>planningmeeting (w/ QA and creative)</td><td class=xl70>x</td><td class=xl70></td><td class=xl70></td><td class=xl70></td><td class=xl70></td><td class=xl70></td><td class=xl70></td><td class=xl70></td><td class=xl70></td><td class=xl70></td> </tr> <tr height=15 style='height:15.0pt'><td height=15 class=xl67 style='height:15.0pt;border-top:none'>retrospective(w/ QA)</td><td class=xl70></td><td class=xl70></td><td class=xl70></td><td class=xl70></td><td class=xl70></td><td class=xl70></td><td class=xl70></td><td class=xl70></td><td class=xl70></td><td class=xl70>x</td> </tr> <tr height=15 style='height:15.0pt'><td height=15 class=xl67 style='height:15.0pt;border-top:none'>scrum</td><td class=xl70>x</td><td class=xl70>x</td><td class=xl70>x</td><td class=xl70>x</td><td class=xl70>x</td><td class=xl70>x</td><td class=xl70>x</td><td class=xl70>x</td><td class=xl70>x</td><td class=xl70>x</td> </tr> <tr height=48 style='mso-height-source:userset;height:48.0pt'><td height=48 class=xl66 style='height:48.0pt'>QA</td><td colspan=10 style='mso-ignore:colspan'></td> </tr> <tr height=15 style='height:15.0pt'><td height=15 class=xl67 style='height:15.0pt'>days</td><td class=xl68>1</td><td class=xl68>2</td><td class=xl68>3</td><td class=xl68>4</td><td class=xl68>5</td><td class=xl68>6</td><td class=xl68>7</td><td class=xl68>8</td><td class=xl68>9</td><td class=xl68>10</td> </tr> <tr height=15 style='height:15.0pt'><td height=15 class=xl67 style='height:15.0pt;border-top:none'>accectanceplanning for future sprint</td><td class=xl69>50%</td><td class=xl69>100%</td><td class=xl69>100%</td><td class=xl69>50%</td><td class=xl69>50%</td><td class=xl70></td><td class=xl69></td><td class=xl69></td><td class=xl69></td><td class=xl69></td> </tr> <tr height=15 style='height:15.0pt'><td height=15 class=xl67 style='height:15.0pt;border-top:none'>Testing/creating bugs</td><td class=xl70></td><td class=xl69></td><td class=xl69></td><td class=xl69>50%</td><td class=xl69>50%</td><td class=xl69>100%</td><td class=xl69>100%</td><td class=xl69>100%</td><td class=xl69>100%</td><td class=xl69>100%</td> </tr> <tr height=15 style='height:15.0pt'><td height=15 class=xl67 style='height:15.0pt;border-top:none'>retrospective(w/ QA)</td><td class=xl70>x</td><td class=xl70></td><td class=xl70></td><td class=xl70></td><td class=xl70></td><td class=xl70></td><td class=xl70></td><td class=xl70></td><td class=xl70></td><td class=xl70></td> </tr> <tr height=15 style='height:15.0pt'><td height=15 class=xl67 style='height:15.0pt;border-top:none'>retrospective</td><td class=xl70></td><td class=xl70></td><td class=xl70></td><td class=xl70></td><td class=xl70></td><td class=xl70></td><td class=xl70></td><td class=xl70></td><td class=xl70></td><td class=xl70>x</td> </tr> <tr height=15 style='height:15.0pt'><td height=15 class=xl67 style='height:15.0pt;border-top:none'>acceptance/validationof task completion</td><td class=xl71></td><td class=xl71></td><td class=xl71></td><td class=xl71></td><td class=xl71></td><td class=xl71></td><td class=xl71></td><td class=xl71></td><td class=xl70>x</td><td class=xl70>x</td> </tr> <tr height=15 style='height:15.0pt'><td height=15 class=xl67 style='height:15.0pt;border-top:none'>scrum</td><td class=xl70>x</td><td class=xl70>x</td><td class=xl70>x</td><td class=xl70>x</td><td class=xl70>x</td><td class=xl70>x</td><td class=xl70>x</td><td class=xl70>x</td><td class=xl70>x</td><td class=xl70>x</td> </tr></table>
 
----
 
-# Are you doing it right? 
 
----
-
-* Do your developers and testers ALWAYS leave on time?
-* Are you becoming more constant with completing the task agreed upon for the sprint?
-* Do you have some free time to work on improving the process?
-* Are you triaging properly? When you spend time changing something on process does it make developers, testers, creative, business owners and end users happier?
-* Do you have anything metric'ed and tracked cross sprint? (If you're not then give an SLA to the business owner that gets a bullet point in the product demo)
-* Is there enough pain when someone fails to follow and improve the process?
-* How can you show you're improving something unless it's tracked or documented?
