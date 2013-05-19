@@ -28,7 +28,7 @@ There are 3 tenants in this definition.If all these 3 are not addressed then you
 
 2. __Constancy:__ In order to be constant there are 2 parts that needs addressing.  First there must be a proper planning process. The product owner has prioritized the tasks with basic documentation for each task. The process used to refine and explicitly detail each task is critical. A centralized tracking tool must be in place in which the documentation of tasks are continually refined. These __living documents__ allow for asynchronous work to be done in parallel and leverage of the team member that need to know, while also allowing people to jump in and out of refining the documentation. Once the documentation has been refined to the point that there is no ambiguity and no dependencies that would stop the task from being built properly, it can be a candidate for a coming sprint.  The second part of instilling constancy is by having a consistent formalized process to re-evaluate the planning and execution processes. If team members are over or under utilized or tasks are not being completed something is broken and needs to get realigned. __Retrospectives__ at the end of the sprint are the main driver to enable the team to self-evaluate and collectively triage deficiencies. Only the most critical problems need to have actions taken to improve. The actions taken must tracked in order to evaluated the cost and effectiveness of the proposed solution. 
 
-3. __Methodic Improvements:__  Trackable analysis of how effective or ineffective the processes are and how the team is performing is imparitive. __Key Performance Indicators__ need to be defined, tracked and visible to the product owner, generally in the product review process. This keeps the project and the team honest by having measurements to show improvements or slippage. The __Service Level Agreement__ of KPI should be continually evaluated and reevaluated in order to weight trade-off between the cost to implement/maintain something and the rewards it is delivering. It is hard to create metrics. They can become misleading if they aren't constantly improved. But without measurements there can be no subjective analysis of progress and decline.
+3. __Methodic Improvements:__  Trackable analysis of how effective or ineffective the processes are and how the team is performing is imperative. __Key Performance Indicators__ need to be defined, tracked and visible to the product owner, generally in the product review process. This keeps the project and the team honest by having measurements to show improvements or slippage. The __Service Level Agreement__ of KPI should be continually evaluated and reevaluated in order to weight trade-off between the cost to implement/maintain something and the rewards it is delivering. It is hard to create metrics. They can become misleading if they aren't constantly improved. But without measurements there can be no subjective analysis of progress and decline.
 
 Here's a few bullet points to help self-analyze if you're on the right track:
 
@@ -58,11 +58,47 @@ Here's a few bullet points to help self-analyze if you're on the right track:
 
 ---
 
-## The Default Agile
+## The Default Agile - Getting started on the right foot
 
 ---
 
-TODO: Structure sprints, focus on live documentation for planning, retrospectives with consequences, what/how to start unit testing, how to structure the product review and the most low cost, high reward metrics to start with.
+When getting started on Agile it's hard to find the right way to run it. A project with 2 developers for 2 months is very different than a 5 year project with 100s. The keys are to first focus on progressively defining your stories in a centralized tracking tool to allow for asynchronous working. The second is agree on a feature that can be created in a short timeline and to not accept drastic changes/redirections during the build time. And the last is to have a formalized process to let the team decide what the important issues are and take actions to improvement defects in the process. 
+
+For each of these processes I have a couple items I use to self-assess how the process that was implemented is achieving its' goals. If you're just getting started with Agile I'd recommend writing down each process you've implemented, the goals of the process and set some rough KPIs. Here's how I go about structuring a project from scratch:
+
+###### Get a tracking tool. 
+1. Break out stories and have the creatives start adding the visuals where, have discussions on the visuals, UX requirements for the task in that story. 
+2. There are tons of great tools free and paid. The point is to get something people are comfortable with and can use. A few buzzwords to get you off on the right path would be: JIRA, Basecamp, Pivotal Tracker, Rally.
+3. Maintain focus to keep discussion about a story in the tracking tool. Where you have meeting to define a story better, assign one person to enter the progress in the tracking tool.
+4. When directions have been taken on a story, hide or delete old conversations and roll it up into a summary.
+
+Self-Assessment:
+* Tracking. Make sure all important items are getting progress and the team isn't letting things slide.
+* Asynchronous Workflow. By isolating tasks and consistently improving documentation it allows for the work to be shifted around the team better.
+* Spreading the workload. If one person is getting overworked then parts of his work can be delegated to another much easier.
+* Quick Ramp-up. New people brought on or current people just starting to work on a different section can understand much quicker all the details around what was done and what they should be doing.
+
+###### Agree to a body of work by a set date and then complete the work without modifications.
+
+1. Sprints generally are 2 weeks but they can be a week depending on the type of projects. 
+2. The key is to not be changing directions mid-stream. Any change makes it less and less likely you will have a fully complete item. When means it can't be evaluated properly and you can't keep a commitment when something will be finished.
+3. The planning process is on-going and should help fill in the gaps on the time actually spend coding.
+
+Self-Assessment:
+* Constancy. Improving consistency in the delivery of finished work.
+* Evaluate finalized ideas. Making finalized functionality instead of a lot of half-done work that gets trashed instead of building improvements on top of.
+* Product Triage. Analyze the defects and benefits of the product and work the most important items first.
+
+###### Retrospectives and Measurements 
+1. Although this takes the least amount of effort it pays off in boat loads. It's the core to have the team evaluate themselves and agree which are the important items to improve the process.
+2. Try different ways to run the retro and if you're getting what you want out of it. Different ways you run the retro will pay off in different ways.
+3. Personally my focus on retro is to get a collective subconsciousness of the group sync on the critical items without discussion. I like running retros when the team voices their issues verbally. Then you go around again and let others +1 to any items that others brought up but affected them. Next you take the top issues, decide if an action can be taken, have some directed discussion what should be done and assign an owner to take the action. During the following retro and product demo review the progress of each action item is reviewed.
+4. Have some basic KPIs. There are two groups of KPIs that don't take a lot of time and help to bring bi-partisanship to the project: consistency and quality. For consistency some good ones to start with are having a burndown rate to track your progress during the sprint and second is the of tasks committed to and those completed. For quality the amount of defects in the testing process and time to resolution are some simple ones that can provide insights to the progress of the project. Other things like unit testing, behavior or functional testing or story point velocity are good but the cost to reward ratios can be deceptive and more complex.
+
+Self-Assessment:
+* Process Triage. Collectively analyze the main defects and benefits in the process and work towards improving the process.
+* Perfectionism. Perfection is continual process of rebalancing. Everything has a cost but understanding and metricing what the rewards are is more difficult.  
+* Honesty. Metrics are to keep everyone honest about what the process is and how it is improving or faltering. The metrics need to be consistent but also continually assess as a team what ever metric says about the project and what are the right things to metric. 
 
 ---
 
