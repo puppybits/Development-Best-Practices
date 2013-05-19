@@ -66,7 +66,7 @@ When getting started on Agile it's hard to find the right way to run it. A proje
 
 For each of these processes I have a couple items I use to self-assess how the process that was implemented is achieving its' goals. If you're just getting started with Agile I'd recommend writing down each process you've implemented, the goals of the process and set some rough KPIs. Here's how I go about structuring a project from scratch:
 
-###### Get a tracking tool. 
+#### Get a tracking tool. 
 1. Break out stories and have the creatives start adding the visuals where, have discussions on the visuals, UX requirements for the task in that story. 
 2. There are tons of great tools free and paid. The point is to get something people are comfortable with and can use. A few buzzwords to get you off on the right path would be: JIRA, Basecamp, Pivotal Tracker, Rally.
 3. Maintain focus to keep discussion about a story in the tracking tool. Where you have meeting to define a story better, assign one person to enter the progress in the tracking tool.
@@ -78,7 +78,7 @@ Self-Assessment:
 * Spreading the workload. If one person is getting overworked then parts of his work can be delegated to another much easier.
 * Quick Ramp-up. New people brought on or current people just starting to work on a different section can understand much quicker all the details around what was done and what they should be doing.
 
-###### Agree to a body of work by a set date and then complete the work without modifications.
+#### Agree to a body of work by a set date and then complete the work without modifications.
 
 1. Sprints generally are 2 weeks but they can be a week depending on the type of projects. 
 2. The key is to not be changing directions mid-stream. Any change makes it less and less likely you will have a fully complete item. When means it can't be evaluated properly and you can't keep a commitment when something will be finished.
@@ -89,7 +89,7 @@ Self-Assessment:
 * Evaluate finalized ideas. Making finalized functionality instead of a lot of half-done work that gets trashed instead of building improvements on top of.
 * Product Triage. Analyze the defects and benefits of the product and work the most important items first.
 
-###### Retrospectives and Measurements 
+#### Retrospectives and Measurements 
 1. Although this takes the least amount of effort it pays off in boat loads. It's the core to have the team evaluate themselves and agree which are the important items to improve the process.
 2. Try different ways to run the retro and if you're getting what you want out of it. Different ways you run the retro will pay off in different ways.
 3. Personally my focus on retro is to get a collective subconsciousness of the group sync on the critical items without discussion. I like running retros when the team voices their issues verbally. Then you go around again and let others +1 to any items that others brought up but affected them. Next you take the top issues, decide if an action can be taken, have some directed discussion what should be done and assign an owner to take the action. During the following retro and product demo review the progress of each action item is reviewed.
