@@ -93,7 +93,6 @@ if (isVarUnique) { ... }
  * events
  * localize observing
  * data binding
- * backbone thingy
 
 ---
 
