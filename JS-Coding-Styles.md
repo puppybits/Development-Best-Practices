@@ -106,7 +106,10 @@ function sendMessageServiceRequest( data, success, callback ) { ... }
 // RIGHT
 function sendMessageServiceRequest( userid, messageId, messageBody, success, callback ) { ... } 
 
-// WHY? This helps you to see the dependancies of the function better. It helps other developers who didn't write this function, nor should they need to read the detail steps of every function, understand the requirements to use the function.
+// WHY? This helps you to see the dependancies of the function better. 
+// It helps other developers who didn't write this function, nor should 
+// they need to read the detail steps of every function, understand 
+// the requirements to use the function.
 ```
 
 * If an error check can early return out of a method, do the check as close to the top as possible.
@@ -154,7 +157,10 @@ function updatePosition( x )
 
   this.move( x );
 }
-//WHY? Because the updatePosition function does 2 things. It calculates the forces, then it moves the object to the new position.  Keeping like functionality together helps to make your code more readable, scanable and understandable.
+// WHY? Because the updatePosition function does 2 things. 
+// It calculates the forces, then it moves the object to 
+// the new position.  Keeping like functionality together 
+// helps to make your code more readable, scanable and understandable.
 
 
 ```
@@ -206,7 +212,12 @@ function calculateXPosition( x, previousX, mass, acceleration )
 
   return x;
 }
-// WHY? This to keep private functions unit testable. If all the dependancies are injected as a param then when the function is ran it will count towards code completion because everything was testable and nothing needed to be mocked out. It also helps to spot dependancies much quicker and address way to eliminate them. 
+// WHY? This to keep private functions unit testable. If all 
+// the dependancies are injected as a param then when 
+// the function is ran it will count towards code completion 
+// because everything was testable and nothing needed to 
+// be mocked out. It also helps to spot dependancies 
+// much quicker and address way to eliminate them. 
 
 
 ```
