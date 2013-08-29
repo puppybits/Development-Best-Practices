@@ -45,7 +45,13 @@ for (var i = 0; i < arr.length; i++)
 {
   arr.filter( highThanFive );
 }
-// WHY? calling function or var inside a loop will allocate space in the heap and create a new instance each time through the loop. So in the example instead of creating just one function it will check 7 functions that need to be marked for garbage collection as soon as the loop is complete. This is a waste of memory and resources and has been impacts on old computers and mobile devices where there's not much to go around.
+// WHY? calling function or var inside a loop will allocate space 
+// in the heap and create a new instance each time through the loop. 
+// So in the example instead of creating just one function it will 
+// check 7 functions that need to be marked for garbage collection 
+// as soon as the loop is complete. This is a waste of memory and 
+// resources and has been impacts on old computers and mobile devices 
+// where there's not much to go around.
 
 ```
 
