@@ -6,15 +6,15 @@
 `mate /etc/apache2/httpd.conf`
 insure that Apache is allowing traffic from the outside:
 
+```
+# no external access to web server
+# Listen localhost:80
+# Listen localhost:443
 
-    # no external access to web server
-    # Listen localhost:80
-    # Listen localhost:443
-    
-    # allow traffic from external IPs
-    Listen 80
-    Listen 443
-
+# allow traffic from external IPs
+Listen 80
+Listen 443
+```
     
 2. restart apache. In terminal run `sudo apachectl restart`
 3. install Charles Proxy http://charlesproxy.com (or any other proxy server).
